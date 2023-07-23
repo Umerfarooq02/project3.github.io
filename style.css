@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #0066cc;
+}
+
+#userGuess {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#checkButton {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: #0066cc;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+#message {
+    color: rgb(0, 132, 255);
+    font-weight: bold;
+}
+
+#score, #highScore {
+    margin-top: 20px;
+}
+
+
+/* Add a background image to the container */
+.bg-image {
+    background-image: url("background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+/* Style the picture gallery */
+.myslides {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+/* Style the individual images in the gallery */
+.myslides img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 10px;
+}
+
+body {
+    background-color: #0000FF; /* Replace with your desired color code */
+}

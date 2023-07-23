@@ -1,0 +1,102 @@
+<!--- Umer F
+Software Engineer Micro 
+Web Development Cohort 7
+Summer 2023
+Project 3
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+        <!-- Add  custom CSS  -->
+    <link rel="stylesheet" type="stylesheet" href="styles.css">
+          <!-- Add the Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    
+
+<h2>
+   <!-- Navigation bar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="geniusbar.html">Genius bar</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+</nav>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+</header2>
+
+</h2>
+
+
+    <h1>Number Guessing Game</h1>
+    <p>Guess a number between 1 and 100:</p>
+    <input type="number" id="userGuess">
+    <img src="images/genius.jpg" button id="checkButton">Click the Image</button>
+    <p id="message"></p>
+    <p id="score">Current Score: 10</p>
+    <p id="highScore">History High Score: 0</p>
+   
+</head>
+<body>
+
+
+    <div class="container"></div>
+ 
+    <div class="container">
+        <h1>Genius bar slideshow</h1>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="images/image1.jpg" alt="Image 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/image2.jpg" alt="Image 2">
+            </div>
+            <div class="mySlides">
+                <img src="images/image3.jpg" alt="Image 3">
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+    </div>
+
+
+<script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds (adjust the time as needed)
+}
+
+</script>
+
+ <!-- Add the Bootstrap JS link (optional) -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script src="script.js"></script>
+
+
+</body>
+</html>
